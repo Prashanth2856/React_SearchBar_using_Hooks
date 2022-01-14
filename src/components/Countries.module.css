@@ -5,11 +5,26 @@
     border-bottom: 3px solid orange;
     height: 30px;
 }
-.country{
+.country {
     width: 300px;
     height: 50px;
     text-align: center;
     margin: auto;
+}
+.capital {
+    display: none;
+}
+.country:hover + .capital {
+    display: block;
+    color: red;
+    background-color: rgb(2, 41, 2);
+    font-size: 1.5rem;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
 }
 .country:hover {
     background-color: rgb(2, 41, 2);
@@ -20,4 +35,5 @@
     text-align: center;
     margin: auto;
     border-radius: 10px;
+    display: block;
 }

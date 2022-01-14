@@ -34,8 +34,9 @@ export const Countries = () => {
             <div>
                 {
                     resultCountry.map((e) => (
-                        <div className={styles.country}>
-                            <p>{e.country}</p>
+                        <div >
+                            <p className={styles.country}>{e.country}</p>
+                            <p className={styles.capital}>Capital: {e.city}</p>
                         </div>
                     ))
                 }
